@@ -9,23 +9,24 @@ class Materia{
     - String nombre
     -List<Materia> correlativas
 
-    String getNombre()
-    List<Materia> getCorrelativas()
+    +agregarCorrelativas(Materia... materias)
+    +List<Materia> getCorrelativas()
 }
 
 class Inscripcion{
     -Alumno alumno
     -List<Materia> materias
 
-    boolean aprobada()
+    +agregarMaterias(Materia... materias)
+    +aprobada()
 }
 
 class Alumno{
     -String nombre
     -List<Materia> materiasAprobadas
 
-    String getNombre()
-    List<Materia> getMateriasAprobadas()
-    boolean aprobo(Materia materia)
+    +List<Materia> getMateriasAprobadas()
+    +aprobo(Materia materia)
+    +agregarMateriasAprobadas(Materia... materias)
 }
 @enduml
