@@ -30,3 +30,11 @@ class Alumno{
     +agregarMateriasAprobadas(Materia... materias)
 }
 @enduml
+
+Alumno 1 — * Materia (aprobadas)
+
+Materia 0..* — * Materia (correlativas)
+
+Inscripcion 1 — * Materia (materias a inscribirse)
+
+Inscripcion 1 — 1 Alumno (alumno que se inscribe)
